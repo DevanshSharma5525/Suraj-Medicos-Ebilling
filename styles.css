@@ -1,0 +1,126 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.phone {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #34495e;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #2c3e50;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse; /* Ensures rows and columns have lines */
+    font-size: 16px;
+    border: 1px solid #ddd; /* Borders for rows and columns */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Border for each cell */
+}
+
+th {
+    background-color: #f39c12;
+    color: white;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #e74c3c;
+    text-align: right;
+}
+
+#totalPrice {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Thank You message styling */
+.thank-you-message {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+.thank-you-message h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.thank-you-message p {
+    font-size: 18px;
+    color: #34495e;
+}

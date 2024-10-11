@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Medicos - E-Billing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Suraj Medicos</h1>
+            <p class="phone">Phone: 9650037400</p>
+        </div>
+
+        <form id="billForm">
+            <div class="form-group">
+                <label for="customerName">Customer Name:</label>
+                <input type="text" id="customerName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="customerAddress">Customer Address:</label>
+                <input type="text" id="customerAddress" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="customerPhone">Phone Number:</label>
+                <input type="text" id="customerPhone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="itemName">Item Name:</label>
+                <input type="text" class="itemName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="itemQuantity">Quantity:</label>
+                <input type="number" class="itemQuantity" required>
+            </div>
+
+            <div class="form-group">
+                <label for="itemPrice">Price (₹):</label>
+                <input type="number" class="itemPrice" required>
+            </div>
+
+            <button type="button" id="addItemBtn">Add Item</button>
+
+            <table id="itemsTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price (₹)</th>
+                        <th>Amount (₹)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            
+            <div class="total">
+                <label for="totalPrice">Total Price (₹):</label>
+                <span id="totalPrice">0</span>
+            </div>
+
+            <button type="button" onclick="generatePDF()">Generate E-Bill</button>
+        </form>
+
+        <!-- Thank you message section -->
+        <div id="thankYouMessage" class="thank-you-message">
+            <h2>Thank You for Shopping with Suraj Medicos!</h2>
+            <p>We hope you had a great experience. If you have any questions, feel free to contact us.</p>
+            <p>Phone: 9650037400</p>
+            <p>Have a wonderful day!</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
